@@ -1,50 +1,79 @@
-# Welcome to your Expo app 👋
+# App2_ReactNative 📱
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+¡Bienvenido a **App2_ReactNative**! Este es un proyecto de aplicación móvil desarrollado utilizando [React Native](https://reactnative.dev/).
 
-## Get started
+## 🚀 Requisitos Previos
 
-1. Install dependencies
+Antes de comenzar, asegúrate de tener instalado lo siguiente en tu entorno de desarrollo:
 
+- [Node.js](https://nodejs.org/) (versión 16 o superior recomendada)
+- [npm](https://www.npmjs.com/) o [Yarn](https://yarnpkg.com/)
+- Entorno de desarrollo para React Native (Android Studio para Android, Xcode para iOS). Puedes consultar la [guía oficial de configuración de React Native](https://reactnative.dev/docs/environment-setup).
+
+## 🛠️ Instalación
+
+Sigue estos pasos para configurar el proyecto localmente:
+
+1. Clona este repositorio:
+   ```bash
+   git clone https://github.com/eudyyuniorramires/App2_RactNative.git
+   ```
+
+2. Navega al directorio del proyecto:
+   ```bash
+   cd App2_RactNative
+   ```
+
+3. Instala las dependencias del proyecto:
    ```bash
    npm install
+   # o si prefieres Yarn:
+   yarn install
    ```
 
-2. Start the app
+## 🏃‍♂️ Ejecución del Proyecto
 
-   ```bash
-   npx expo start
-   ```
-
-In the output, you'll find options to open the app in a
-
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
+### En Android
+Para ejecutar la aplicación en un emulador de Android o en un dispositivo físico conectado, utiliza:
 ```bash
-npm run reset-project
+npx react-native run-android
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+### En iOS (Solo para macOS)
+Para ejecutar la aplicación en el simulador de iOS, primero debes instalar las dependencias de CocoaPods:
+```bash
+cd ios
+pod install
+cd ..
 
-## Learn more
+npx react-native run-ios
+```
 
-To learn more about developing your project with Expo, look at the following resources:
+*(Nota: Si tu proyecto fue creado con **Expo**, puedes simplemente ejecutar `npm start` o `npx expo start` y abrir la app en la aplicación Expo Go en tu celular).*
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+## 📁 Estructura del Proyecto
 
-## Join the community
+Una estructura típica sugerida para este proyecto:
 
-Join our community of developers creating universal apps.
+```text
+App2_RactNative/
+├── src/                # Código fuente principal (componentes, pantallas, navegación)
+├── android/            # Archivos nativos del proyecto Android
+├── ios/                # Archivos nativos del proyecto iOS
+├── App.js / App.tsx    # Punto de entrada principal de la aplicación
+├── package.json        # Dependencias y scripts
+└── README.md           # Este archivo
+```
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+## 🤝 Contribución
+
+¡Las contribuciones son bienvenidas! Si deseas mejorar este proyecto:
+1. Haz un _Fork_ del repositorio.
+2. Crea una rama para tu característica (`git checkout -b caracteristica/NuevaCaracteristica`).
+3. Haz _Commit_ de tus cambios (`git commit -m 'Añadir nueva característica'`).
+4. Haz _Push_ a la rama (`git push origin caracteristica/NuevaCaracteristica`).
+5. Abre un _Pull Request_.
+
+## 📄 Licencia
+
+Este proyecto está bajo la Licencia MIT - mira el archivo `LICENSE` (si aplica) para más detalles.
